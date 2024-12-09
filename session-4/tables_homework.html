@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tabel</title>
+  </head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th,
+    td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    td:hover {
+      background-color: #f8f8ff;
+    }
+  </style>
+  <body>
+    <!--part 1 homwork-->
+    <table role="table">
+      <caption>
+        List of Participants
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Guranda</td>
+          <td>25</td>
+          <td>g@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Nika</td>
+          <td>20</td>
+          <td>g@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Elene</td>
+          <td>27</td>
+          <td>g@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Mariam</td>
+          <td>19</td>
+          <td>g@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Giorgi</td>
+          <td>23</td>
+          <td>g@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--part 2 homwork-->
+    <table role="table">
+      <caption>
+        Weekly Schedule
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Schedule</th>
+          <th scope="col">MON</th>
+          <th scope="col">TUE</th>
+          <th scope="col">WED</th>
+          <th scope="col">THU</th>
+          <th scope="col">SAT</th>
+          <th scope="col">SUN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Morning</th>
+          <td colspan="7">Yoga Class</td>
+        </tr>
+        <tr>
+          <th scope="row">Afternoon</th>
+          <td colspan="3">Teem Meeting</td>
+          <td>Work</td>
+          <td>Work</td>
+          <td rowspan="2">Family Time</td>
+        </tr>
+        <tr>
+          <th scope="row">Evning</th>
+          <td>Gym</td>
+          <td>Rekax</td>
+          <td>Gym</td>
+          <td>Relax</td>
+          <td>Gym</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--part 3 homwork-->
+    <table role="table">
+      <caption>
+        Shopping Cart Table
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col" id="item-name">Items</th>
+          <th scope="col" id="quantity">Quantity</th>
+          <th scope="col" id="price-per-item">Price per Item</th>
+          <th scope="col" id="total-price">Total Price</th>
+          <th scope="col" id="details">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td headers="item-name">Apples</td>
+          <td headers="quantity">3</td>
+          <td headers="price-per-item">$2.00</td>
+          <td headers="total-price">$6.00</td>
+          <td headers="details"></td>
+        </tr>
+        <tr>
+          <td headers="item-name">Bread</td>
+          <td headers="quantity">2</td>
+          <td headers="price-per-item">$3.50</td>
+          <td headers="total-price">$7.00</td>
+          <td headers="details">
+            <table class="nested-table">
+              <tr>
+                <th scope="row">Weight</th>
+                <td>500 g</td>
+              </tr>
+              <tr>
+                <th scope="row">Brand</th>
+                <td>Khelvachauri</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td headers="item-name">Milk</td>
+          <td headers="quantity">1</td>
+          <td headers="price-per-item">$4.00</td>
+          <td headers="total-price">$4.00</td>
+          <td headers="details">
+            <table class="nested-table">
+              <tr>
+                <th scope="row">Volume</th>
+                <td>1 L</td>
+              </tr>
+              <tr>
+                <th scope="row">Brand</th>
+                <td>Soplis Nobati</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td headers="item-name">Eggs</td>
+          <td headers="quantity">12</td>
+          <td headers="price-per-item">$0.50</td>
+          <td headers="total-price">$6.00</td>
+          <td headers="details">
+            <table>
+              <tr>
+                <th scope="row">Size</th>
+                <td>Large</td>
+              </tr>
+              <tr>
+                <th scope="row">Brand</th>
+                <td>Bus Kverckhi</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row" colspan="3">Total</th>
+          <td>$23.00</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
