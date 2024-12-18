@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: darkblue;
+}
+#about {
+
+    /* display: flex; */
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h2{
+    font-size: 24px;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+#skills {
+    background-color: #fffacd;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+h3{
+    font-size: 20px;
+    color: darkgreen;
+}
+p{
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+#projects > h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.first-project{
+    background-color: #e6f7ff;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.second-project{
+    background-color: #fffbe6;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.third-project{
+    background-color: #e6ffe6;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.my_projects{
+    /* display: inline-block; */
+}
+
+nav ul li {
+    list-style-type: none;
+    color: darkred;
+}
+
+img[src] {
+    width: 40pxx;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+nav{
+    width: 70px;
+    padding: 5px;
+}
+nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+#skills li::before {
+    content: "⭐ ";
+}
+
